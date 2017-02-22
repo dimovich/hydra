@@ -1,0 +1,49 @@
+!*access_log*
+!logs/access
+!logs/amSSO.access
+!logs/gc.log
+!logs/amAuthentication.access
+!Events_incomplete.xml
+
+#
+# ignore all log files from 'debug' dir:
+#
+#!debug/*
+
+#
+# ignore all log messages that have 'lb_health' text in them (applies to all log files)
+#
+#!* lb_health
+
+
+
+#
+# ignore extremely verbose logs
+#
+#!IdRepo
+#!debug/remoteSession
+#!debug/LocaleFilter
+#!debug/ClientDetectorPlugin
+#!debug/statDebug
+#!debug/Configuration
+#!debug/Authentication
+#!debug/CoreSystem
+#!debug/SiteAffinityCDCFilter
+#!debug/remoteRequest
+#!debug/Session
+#!debug/aaaCommonLibrary
+#!debug/statDebug
+
+#!* lb_health
+#!* nagle algorithm
+#*.log
+
+#*amAuthLog*
+
+#*ESB*
+
+
+#*aaaCommonLibrary*
+#*ResetPasswordController*
+#*amPasswordReset*
+#*catalina.out*
